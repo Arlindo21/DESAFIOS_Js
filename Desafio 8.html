@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Desafio 8</title>
+</head>
+<body>
+   <!--Faça um algoritmo que leia três valores inteiros diferentes e imprima na tela os valores em ordem decrescente.-->
+    <script>
+let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));
+let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));
+let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));
+const valores = [valor1, valor2, valor3];
+valores.sort((a, b) => b - a);
+alert("Valores em ordem decrescente: " + valores.join(", "));
+    </script>
+</body>
+</html>

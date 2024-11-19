@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 10 e 11</title>
+</head>
+<body>
+    <!--Faça um algoritmo que leia três notas obtidas por um aluno, e imprima na tela a média das notas.
+    -->
+    <!-- Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das nota obtidas, imprima na tela o nome do aluno e 
+
+ se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado sua média final deve ser maior ou igual a 7.-->
+    <script>
+      alert("Vamos calcular a média do ALuno")
+let Nome=prompt("Digite o nome do estudante ");
+let N1=parseFloat(prompt(`Digite a primeira nota do estudante ${Nome}`));
+let N2=parseFloat(prompt(`Digite a segunda nota do estudante ${Nome}`));
+let N3=parseFloat(prompt(`Digite a terceira nota do estudante ${Nome}`));
+let N4=parseFloat(prompt(`Digite a quarta nota do estudante ${Nome}`));
+let Media =(N1+N2+N3+N4)/4
+// alert(`A média do do estudante é de${Media.toFixed(1)}`)
+ if(Media>=10){
+    alert(`O Aluno  ${Nome} foi aprovado com uma media de ${Media.toFixed(1)}`);
+}else if(Media<=9.9 && Media>=8){
+    alert(`O Aluno ${Nome} foi ao recurso  com uma media de ${Media.toFixed(1)}`);
+}else{
+    alert(`O Aluno ${Nome} foi reprovado  com uma media de ${Media.toFixed(1)}`);
+}
+
+    </script>
+</body>
+</html>
