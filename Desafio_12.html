@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 12</title>
+</head>
+<body>
+    <!--Faça um algoritmo que leia o valor de um produto e determine o valor que deve ser pago, conforme a escolha da forma de pagamento
+
+ pelo comprador e imprima na tela o valor final do produto a ser pago. Utilize os códigos da tabela de condições de pagamento para efetuar o cálculo adequado.
+
+ 
+
+ Tabela de Código de Condições de Pagamento
+
+ 
+
+ 1 - À Vista em Dinheiro ou Pix, recebe 15% de desconto
+
+ 2 - À Vista no cartão de crédito, recebe 10% de desconto
+
+ 3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros
+
+ 4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10%-->
+
+
+<script>
+    
+    let valorProduto=parseInt(prompt("Digite o valor do produto"));
+    
+    let formas=["1- À Vista em Dinheiro ou Pix, recebe 15% de desconto \n" , " 2 - À Vista no cartão de crédito, recebe 10% de desconto \n", "3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros \n ", "4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10%"];
+    let formasDepagamentos=prompt(`Qual será a forma de pagamneto ${formas}`);
+    let conta;
+    
+
+    if(formasDepagamentos==1)
+     { conta=valorProduto-(100/15) ;
+        alert(`Pagamentos ${formas[0]} valor a ser pago é ${conta}`);
+        
+
+     }else if(formasDepagamentos==2){
+        conta=valorProduto-(100/10) ;
+        alert(`Pagamentos ${formas[1]} valor a ser pago é ${conta.toFixed(2)}`);
+
+     }else if(formasDepagamentos==3) {
+        
+        alert(`Pagamentos ${formas[3]} valor a ser pago é ${conta}`);
+
+
+     }else if (formasDepagamentos==4){
+        conta=valorProduto+(100/10) ;
+        alert(`Pagamentos ${formas[4]} valor a ser pago é ${conta}`);
+
+
+     }else{
+        console.log();
+     }
+
+
+</script>
+    
+</body>
+</html>

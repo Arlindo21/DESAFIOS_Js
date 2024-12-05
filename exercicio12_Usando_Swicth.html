@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra forma de resolver o exercio 12</title>
+</head>
+<body>
+    <script>
+        function CalcucularDesconto() {
+            
+        let formas=["1- À Vista em Dinheiro ou Pix, recebe 15% de desconto \n" , " 2 - À Vista no cartão de crédito, recebe 10% de desconto \n", "3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros \n ", "4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10%"];
+         let valorProduto=parseFloat(prompt("Digite o valor do produto"));
+         let formasDepagamentos=parseInt(prompt(`Qual será a forma de pagamneto \n ${formas}`));
+         let conta;
+
+         switch(formasDepagamentos){
+            case 1:
+                conta= valorProduto-(100/15); //15%de desconto
+            break;
+                case 2:
+                  conta=valorProduto-(100/10);
+                break;
+                    case 3:
+                     conta=valorProduto;
+                      break;
+                      case 4:
+                        conta=valorProduto+(100/10);
+                        break;
+                         default: 
+                         console.log("INtrução não encontrada");
+                         return;
+
+
+         }
+            alert(`O Valor a ser pago é de ${conta.toFixed(2)}`);
+
+        }
+        CalcucularDesconto() ;
+          
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
