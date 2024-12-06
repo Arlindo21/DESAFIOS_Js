@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--14 - Faça um algoritmo que receba um valor A e B, e troque o valor de A por B e o valor de B por A e imprima na tela os valores.-->
+
+    <script>
+        function trocaDeValores(){
+            let valorDeA=prompt("Digite o valor de A");
+            let valorDeB=prompt("Digite o valor de B");
+
+           alert(`Antes da troca o Valor de A=${valorDeA} e o valor de B=${valorDeB}`);
+
+           let temp = valorDeA;
+           valorDeA=valorDeB;
+           valorDeB=temp;
+           alert(`O Valor de A=${valorDeA} e o valor de B=${valorDeB}`);
+
+            
+        }
+        trocaDeValores()
+    </script>
+</body>
+</html>
