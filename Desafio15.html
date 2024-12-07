@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Faça um algoritmo que leia o ano em que uma pessoa nasceu, imprima na tela quantos anos, meses e dias essa pessoa ja viveu. Leve em 
+
+consideração o ano com 365 dias e o mês com 30 dias.
+
+(Ex: 5 anos, 2 meses e 15 dias de vida)
+    -->
+ <script>
+    function tempo(anoNascimento){
+         
+    let anoAtual = new Date().getFullYear();
+    let idadeAnos = anoAtual - anoNascimento;
+
+   let diasTotais = idadeAnos * 365;
+
+   let meses = Math.floor(diasTotais / 30);
+   let dias = diasTotais % 30;
+
+
+   let mesesInteiros = meses % 12;
+   let anosCompletos = Math.floor(meses / 12);
+
+    alert(`${anosCompletos} anos, ${mesesInteiros} meses e ${dias} dias de vida.`);
+}
+     let anoDeNascimento = prompt("Digite a sua data de Nascimeto"); 
+    tempo(anoDeNascimento);    
+
+
+ </script>
+</body>
+</html>
